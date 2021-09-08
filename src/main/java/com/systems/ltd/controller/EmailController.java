@@ -68,22 +68,7 @@ public class EmailController {
 	}
 	
 	
-//	@PostMapping("/emails")
-//	public Email addEmail() throws IOException {
-//		
-//	    Email email=new Email();
-//	    
-//	    email.setId(1L);
-//    	email.setContent("this is content");
-//	    email.setFromEmail("amirhyderkaloi@gmail.com");
-//	    email.setSubject("this is subject");
-//	    email.setToEmail("amirhyder1998@gmail.com");
-//	    
-//	    return  emailService.insert(email);
-//	    
-//	}
-//	
-	
+
 	
 	
 	
