@@ -15,10 +15,22 @@ public class EmailServiceImpl implements EmailService {
 	EmailRepository emailRepository;
 
 	@Override
-	public void insert(Email email) {
+	public Email insert(Email email) {
 		
-		emailRepository.save(email);
+		return emailRepository.save(email);
 		
+	}
+
+	@Override
+	public Email findById(Long id) {
+		// TODO Auto-generated method stub
+		return emailRepository.findById(id).get();
+	}
+
+	@Override
+	public Email saveEmail(Email email) {
+		// TODO Auto-generated method stub
+		return emailRepository.save(email);
 	}
 
 

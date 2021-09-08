@@ -5,7 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Builder;
+
 @Entity
+
 public class Email {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,6 +20,18 @@ public class Email {
 	
 	
 	
+	public Email() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Email(Long id, String toEmail, String fromEmail, String content, String subject) {
+		super();
+		this.id = id;
+		this.toEmail = toEmail;
+		this.fromEmail = fromEmail;
+		this.content = content;
+		this.subject = subject;
+	}
 	public Long getId() {
 		return id;
 	}
